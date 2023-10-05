@@ -1,0 +1,107 @@
+<!-- 
+    --<a> tag - anchor tag (container tag)
+        href - attribute of anchor tag in which we store the hyperlink
+        target - isse determine kar skte hai ki humare refrenced page kaha par khulega
+                _blank	    Opens the linked document in a new window or tab
+                _self	    Opens the linked document in the same frame as it was clicked (this is default)
+                _parent	Opens the linked document in the parent frame
+                _top	    Opens the linked document in the full body of the window
+                framename	Opens the linked document in the named iframe
+        
+            
+        --fir 2 type ki hyperlinking hai, absolute aur relative
+        absolute me hum root ya absolute path ka address provide krte hai matlab direct source se
+            eg -  <a href="https://www.google.com"> ... </a>
+        
+        relative me hum with respect to the folder (jaha pr hum html bna re hai) hum dekhte hai ki file kaha hai
+        -- jab file same folder me ho toh hum directly link kr skte hai
+        -- agar file aur dusre folder me hoti hai toh uske liye file path mention krna padta hai 
+            for eg- mera l1.htm aur l2.htm dono same folder me hai toh dono ko link krne ke liye mera syntax sirf yeh hoga 
+                    <a href="l1.htm"> ... </a> & <a href="l2.htm"> ... </a>
+
+                    ab maan lo ki mujhe ek file ko link krna hai jo yeh html waale folder me hee dusre folder ke andar hai, toh uske liye
+                    <a href=":folder_name:/:pdf_name:.pdf">...</a>
+
+                    aur agar ab mujhe aisi file ko link krna hai jo html waale folder ke bahar h(for eg web dev waale folder me hai), 
+                    toh uske liye 
+                    <a href="../cheatsheet-a5.pdf">...</a>
+    
+    --<img> tag - image tag (open tag)
+         src - location deta hai source file ki
+         alt - alternate text, agar image na load paa ri ho ya kuch issue ho jaye image me 
+         width & height - changes width and height respectively to the set values 
+                          inorder to maintain the aspect ratio of the image then it is recommended to change only one of the attributes.
+                          
+    --<video> tag - video tag (container tag)
+        <video src=":file_location:/URL" muted autoplay controls poster=":file_location:/URL" width=":value:" height=":value:"></video>
+        Similar to <img> tag but for video
+        - src - location deta hai source file ki
+        - autoplay - boolean attribute to autoplay the video on opening the webpage
+        - muted - video is played muted 
+        - controls - to enable video player controls (play, pause etc..)
+        - poster - thumbnail ki location
+        - width & height - same as above
+        
+    -- <iframe> tag - used to display other websites in our website (also known as embedding)   
+       eg-
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2QR11oDukn4?si=PwEikPxtjUmI88sN" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+        
+    -- <table> tag - 
+       <thead></thead> - headings
+       <tbody></tbody> - saari information of the table 
+       <tfoot></tfoot> - itna necessary ni hai but structure krne ke kaam aa jata hai 
+
+       baaki fir <th></th> , <tr></tr> aur <td></td> 
+       inke attributes wgarh dekhne hai aur matlab border wagarh kaise lga skte etc etc.
+-->
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>download :&#41;</title>
+</head>
+<body>
+    <h1> Red dead Redemption 2 </h1>
+    <hr>
+    <h3>Download links - </h3>
+    <ul>
+        <li><a href="https://www.rockstargames.com/games/reddeadredemption2"><i>Rockstar's Official Site</i></a></li>
+        <li><b>Download</b><br>
+            <ul>
+                <li><a href="https://bowfile.com/P0v"target="_blank">part 1 </a></li>
+                <li><a href="https://bowfile.com/P0s"target="_blank">part 2</a></li>
+                <li><a href="https://bowfile.com/P0w"target="_blank">part 3</a></li>
+                <li><a href="https://bowfile.com/P0r"target="_blank">part 4</a></li>
+                <li><a href="https://bowfile.com/P0t"target="_blank">part 5</a></li>
+                <li><a href="https://bowfile.com/P0u"target="_blank">part 6</a></li>
+                <li><a href="https://bowfile.com/P1m"target="_blank">part 7</a></li>
+                <li><a href="https://bowfile.com/P1s"target="_blank">part 8</a></li>
+                <li><a href="https://bowfile.com/P1u"target="_blank">part 9</a></li>
+                <li><a href="https://bowfile.com/P1c"target="_blank">part 10</a></li>
+                <li><a href="https://bowfile.com/P1a"target="_blank">part 11</a></li>
+                <li><a href="https://bowfile.com/P1v"target="_blank">part 12</a></li>
+                <li><a href="https://bowfile.com/P1t"target="_blank">part 13</a></li>
+                <li><a href="https://bowfile.com/P1q"target="_blank">part 14</a></li>
+                <li><a href="https://bowfile.com/P1o"target="_blank">part 15</a></li>
+                <li><a href="https://bowfile.com/P11"target="_blank">part 16</a></li>
+                <li><a href="https://bowfile.com/P1j"target="_blank">part 17</a></li>
+                <li><a href="https://bowfile.com/P1x"target="_blank">part 18</a></li>
+                <li><a href="https://bowfile.com/P14"target="_blank">part 19</a></li>
+                <li><a href="https://bowfile.com/1F3p"target="_blank">part 20</a></li>
+                <li><a href="https://bowfile.com/P1w"target="_blank">part 21</a></li>
+                <li><a href="https://bowfile.com/1F3o"target="_blank">part 22</a></li>
+                <li><a href="https://bowfile.com/P1d"target="_blank">part 23</a></li>
+                <li><a href="https://bowfile.com/P15"target="_blank">part 24</a></li>
+                <li><a href="https://bowfile.com/1F3q"target="_blank">part 25</a></li>
+                <li><a href="https://bowfile.com/P1n"target="_blank">part 26</a></li>
+                <li><a href="https://bowfile.com/P1y"target="_blank">part 27</a></li>
+                <li><a href="https://bowfile.com/P1p"target="_blank">part 28</a></li>
+            </ul>          
+        </li>   
+    </ul>
+    <hr>
+    <h5><i><s>We condemn piracy! :&#41;</s></i> <br> <a href="l3.htm" target="_blank"><i>Support Us through a Donation</i></a></h5>
+
+</body>
+</html>

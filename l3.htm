@@ -1,0 +1,83 @@
+<!--
+    
+    <form> tag -- 2 attributes 
+        action - jaha pr bhi hum chahte hai ki humara data save ho
+        method - ki kis tareeke se jaa rha hai, post/get -- value hoti hai baaki baadme detail me dekhenge 
+        
+    <input> tag -- form me input lene ke liye tag 
+    iske attributes -
+    type -- kis type ka input 
+            iski bhi alag alag values hote hai
+            for eg - 
+            <input type="button">
+            <input type="checkbox">
+            <input type="color">
+            <input type="date">
+            <input type="datetime-local">
+            <input type="email">
+            <input type="file">
+            <input type="hidden">
+            <input type="image">
+            <input type="month">
+            <input type="number">
+            <input type="password">
+            <input type="radio">
+            <input type="range">
+            <input type="reset">
+            <input type="search">
+            <input type="submit">
+            <input type="tel">
+            <input type="text"> (default value)
+            <input type="time">
+            <input type="url">
+            <input type="week">     
+
+    <textarea cols=":no_columns:" rows=":no_rows:"> -- basicaly ek text area bnane ke kaam aata hai jisme user apna text likh skta hai.
+        
+    <select> -- drop down bnane ke liye use hota hai aur isme hum <option> tag ka use krte hai to specify values.  
+-->
+<!-- refer - https://www.w3schools.com/html/html_forms.asp -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Donate Us...</title>
+</head>
+<body>
+    <h1>Donate Us...</h1>
+    <p>A small amount of donation from your side can keep our site functioning and will help in expanding the website.&hearts;&hearts;&hearts;</p>
+    <hr>
+    <h3>* indicates required fields....</h3>
+    <form>
+        <fieldset>
+        <legend><b>Contact Details *</b></legend>
+        <p>Name: <input type="text" name="name" id="name" required ></p> <!-- iske liye <label> tag bhi use kr skte as anyone wishes -->
+        <p>Contact No. <input type="number" name="number" id="number" required></p>
+        <p>Email Id: <input type="email" name="email" id="email" required></p>
+        <fieldset>
+            <legend>Gender:</legend>
+            <p>
+                <input type="radio" name="gender" id="male"> Male  <br>
+                <input type="radio" name="gender" id="female"> Female <br>
+                <input type="radio" name="gender" id="other"> Other  <br>            
+            </p>
+        </fieldset>
+        <p>Address: <textarea name="address" id="address" cols="30" rows="10" required></textarea></p>
+        </fieldset>
+        <h3>Amount:* <input type="number" name="amt" id="amt" required min="5"></h3>
+        <fieldset>
+            <legend><b>Card Details *</b></legend>
+            <select required>
+                <option value="">--Select Card Type--</option>
+                <option value="Credit">Credit</option>
+                <option value="Debit">Debit</option>
+            </select>
+            <p>Card No. <input type="number" name="card" id="card" required></p>
+            <p>Expiry Date <input type="date" name="expdate" id="expdate" required></p>
+            <p>CVV/CVC <input type="password" name="cvv" id="cvc"></p>
+        </fieldset>
+        <p><input type="submit" value="Pay Now"> <input type="reset" value="Reset"></p>
+    </form>
+</body>
+</html>
